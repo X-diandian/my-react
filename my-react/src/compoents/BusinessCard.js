@@ -7,8 +7,9 @@ class BusinessCard extends React.Component {
         this.state={
             likes:0
         }
-        // this.likesinst=this.likesinst.bind(this);//绑定回调函数
+        this.likesinst=this.likesinst.bind(this);//绑定回调函数
     }
+
     likesinst(){
         // console.log(this)
         this.setState({
@@ -20,12 +21,14 @@ class BusinessCard extends React.Component {
     render(){
         return(
             <div>
-                <button onClick={()=>{this.likesinst()}}>{this.state.likes}赞</button>
+                {/*<button onClick={this.likesinst()}>{this.state.likes}赞</button>*/}
             </div>
-        )
 
+        )
     }
+
 }
+
 
 
 export default BusinessCard;
